@@ -1,0 +1,265 @@
+<html>
+<head>
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+	    background-image: url("bg-image.jpg");
+	    background-size: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin-left: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .nav a:hover {
+            color: #E3E1C6;
+        }
+
+        .banner {
+            height: 500px;
+            background-image: url("bg_img.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner h1 {
+            font-size: 64px;
+            color: #FFFDE4;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .section h2 {
+            font-size: 36px;
+            color: #111;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #FCFBF4;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project:hover .project-info {
+            opacity: 1;
+        }
+
+        .project-info h3 {
+            font-size: 24px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .project-info p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skill {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 3px solid #E3E1C6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .skill-icon {
+            font-size: 64px;
+            color: #E3E1C6;
+        }
+
+        .skill-name {
+            font-size: 28px;
+            color: #FFFFF0;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #111;
+            padding: 20px;
+        }
+
+        .footer p {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="banner" id="home">
+            <h1>Freelance Web Developer</h1>
+        </div>
+        <div class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hey, I’m Euronymous. I create stunning and user-friendly websites that help you achieve your online goals.
+
+I have been designing websites for over 3 years, using artificial intelligence and web development skills. I can work with various platforms and languages, such as WordPress, HTML, CSS, JavaScript, and Python. I can also integrate features such as chatbots, animations, and e-commerce.
+
+Some of the websites that I have designed include:
+
+A personal website for a bestselling author that featured her books, blog, and podcast.
+A business website for a digital marketing agency that showcased their services, portfolio, and testimonials.
+A educational website for a coding school that offered courses, quizzes, and certificates.
+            </p>
+        </div>
+        <div class="section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1" />
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>A website for a restaurant</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2" />
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>A website for a travel agency</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3" />
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>A website for a online store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <i class="skill-icon fab fa-html5"></i>
+                    <div class="skill-name">HTML</div>
+                </div>
+                <div class="skill">
+                    <i class="skill-icon fab fa-css3-alt"></i>
+                    <div class="skill-name">CSS</div>
+                </div>
+                <div class="skill">
+                    <i class="skill-icon fab fa-js-square"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                If you are interested in hiring me or working with me, please
+                feel free to contact me via email or phone. I would love to hear
+                from you and discuss your project ideas.
+            </p>
+            <p>Email: myemail@example.com</p>
+            <p>Phone: +91 1234567890</p>
+        </div>
+        <div class="footer">
+            <p>© 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
